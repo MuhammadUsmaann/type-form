@@ -1,0 +1,173 @@
+.workspace {
+  margin-top: 248px;
+  transition: transform 300ms cubic-bezier(0.44, 0, 0.24, 1) 0s;
+  transform: translateY(-248px);
+  background-color: #fafafa;
+}
+.workspace-btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 10px 16px;
+  font-size: 20px;
+  line-height: 28px;
+  z-index: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  min-width: 64px;
+  background-color: transparent;
+  box-shadow: transparent 0px 0px 0px 1px inset;
+  height: 48px;
+  max-width: 384px;
+}
+.workspace-btn:hover {
+  outline: 1px solid rgb(187, 187, 187) !important;
+}
+.workspace-btn:focus {
+  outline: 1px solid rgb(187, 187, 187) !important;
+}
+.btn-group > .btn.active {
+  background-color: rgb(115, 115, 115);
+  color: rgb(255, 255, 255);
+  outline: 0 !important;
+}
+.btn-group > .btn.active > .SVGInline-svg {
+  fill: white !important;
+  color: rgb(255, 255, 255);
+  outline: 0 !important;
+}
+
+#workspace .modal-dialog {
+  max-width: 700px !important;
+}
+.share-div-main {
+  flex-shrink: 0;
+  min-width: 0px;
+  color: rgb(38, 38, 39);
+  background-color: rgba(227, 227, 227, 0.8);
+  position: fixed;
+  inset: 0px;
+}
+.share-div-sub {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255, 255, 255) 90%
+  );
+}
+.workspace-card-design {
+  width: 176px;
+  height: 208px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px, rgba(0, 0, 0, 0.06) 0px 2px 12px;
+}
+.workspace-card-design:hover {
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 6%) 0px 2px 12px,
+    rgb(0 0 0 / 4%) 0px 8px 14px, rgb(0 0 0 / 2%) 0px 12px 16px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+.workspace-card-design-img {
+  width: 148px;
+  display: flex;
+  height: 148px;
+  border-radius: 8px 8px 0 0;
+  align-items: center;
+  justify-content: center;
+}
+#upper-div {
+  position: sticky;
+  height: 105px;
+  background-color: #fafafa;
+}
+#lower-div {
+  position: sticky;
+  height: calc(100vh - 105px - 48px - 26px);
+  overflow-y: auto;
+  background-color: #fafafa;
+}
+
+.sidebar-workspace-responsive {
+  flex-shrink: 0;
+  min-width: 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 7%) 0px -1px inset;
+  padding: 12px 16px;
+  z-index: 1000;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .sidebar-workspace-responsive {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 576px) {
+  #lower-div {
+    position: sticky;
+    height: calc(100vh - 105px - 107px - 23px) !important;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #lower-div {
+    position: sticky;
+    height: calc(100vh - 105px - 75px - 95px);
+    overflow-y: auto;
+  }
+}
+
+.share-btn-style {
+  height: 48px;
+  background-color: rgb(204, 224, 220);
+  border: 1px solid rgb(2, 100, 81);
+  color: rgb(2, 80, 65);
+  outline: none;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 188px;
+}
+.share-btn-style:focus {
+  background-color: rgb(154, 193, 185);
+
+}
+.closeicon-fs {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#workspaceitemscontent .dropdown-item {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+}
+#workspaceitemscontent .dropdown-item:active {
+  background-color: transparent !important;
+}
+.workspace-dropdown-menu {
+  background-color: rgb(255, 255, 255);
+  color: rgb(38, 38, 39);
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 6%) 0px 2px 12px;
+  padding: 8px 0px;
+  min-width: 200px;
+  max-width: 200px;
+  border: 0;
+}
+.dropdown-link-style:hover {
+  background-color: rgb(240, 240, 240);
+}

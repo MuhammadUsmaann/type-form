@@ -1,0 +1,118 @@
+#payment {
+  background-color: rgb(250, 250, 250);
+  padding-top: 64px;
+}
+#payment .payment-card {
+  border-radius: 8px;
+  padding: 32px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px;
+  position: relative;
+}
+#payment .styled-input,
+select {
+  -webkit-box-align: center;
+  align-items: center;
+  border-style: solid;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  color: rgb(38, 38, 39);
+  border-color: rgb(187, 187, 187);
+  border-radius: 4px;
+  border-width: 1px;
+  transition: all 0.4s ease 0s;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 7px 13px;
+}
+.coupen-code {
+  width: 312px;
+}
+.new-plan-card-payment {
+  flex-shrink: 0;
+  min-width: 0px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  width: 312px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 6%) 0px 2px 12px,
+    rgb(0 0 0 / 4%) 0px 8px 14px, rgb(0 0 0 / 2%) 0px 12px 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  #payment .container {
+    all: unset;
+  }
+  #payment {
+    padding: 0;
+  }
+
+  .payment-card {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: none !important;
+    padding: 0 0 32px 0 !important;
+    border-radius: 0 !important;
+    background-color: rgb(250, 250, 250) !important;
+  }
+  .coupen-code {
+    width: 100%;
+  }
+}
+
+.custom-toggle-input2 {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 4px;
+  background-color: rgb(214, 218, 225) !important;
+  border-radius: 25px;
+  transition: 0.6s;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px !important;
+  padding: 7px 14px !important;
+}
+.custom-toggle-input2::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  transform: translate(-40%, -50%);
+  transition: left 0.3s;
+}
+.custom-toggle-input2:checked::after {
+  left: 70%;
+  background-color: white !important;
+}
+.custom-toggle-input2:checked {
+  background-color: rgb(4, 135, 175) !important;
+  border-color: rgb(4, 135, 175) !important ;
+}
+.c-card-input {
+  -webkit-box-align: center;
+  align-items: center;
+  border-style: solid;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  color: rgb(38, 38, 39);
+  border-color: rgb(187, 187, 187);
+  border-radius: 4px;
+  border-width: 1px;
+  transition: all 0.4s ease 0s;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 7px 13px;
+  width: 53%;
+}
+
+@media screen and (max-width: 991px) {
+  .c-card-input {
+    width: 100%;
+  }
+}

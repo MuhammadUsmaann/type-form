@@ -1,0 +1,103 @@
+#appintegration .sidebar-main {
+  min-width: 0px;
+  min-height: 0px;
+  flex-shrink: 0;
+  width: 256px;
+}
+#appintegration .sidebar {
+  flex-shrink: 0;
+  min-width: 0px;
+  background-color: rgb(255, 255, 255);
+  height: calc(100vh - 48px);
+  box-shadow: rgb(0 0 0 / 7%) -1px 0px inset;
+  position: relative;
+  min-height: 350px !important;
+  transition: all 0.4s ease 0s;
+  padding-top: 64px;
+}
+#appintegration .sidebar .lower-div {
+  height: calc(100vh - 64px - 133px);
+  overflow-y: auto;
+}
+#appintegration .discover-main {
+  width: calc(100vw - 256px);
+  padding-top: 64px;
+}
+.discover-main #close{
+    position: absolute;
+top: 20px;
+right: 20px;
+}
+.border-color {
+  border-color: rgb(187, 187, 187) !important;
+  border: 1px solid;
+}
+
+.catagories-btn {
+  padding: 10px 16px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  outline: none;
+  font-family: inherit;
+  border: 0px;
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
+  min-height: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: transparent;
+  color: rgb(115, 115, 115);
+}
+.catagories-btn:hover {
+  background-color: rgb(233, 232, 232);
+}
+
+.mp-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px, rgb(0 0 0 / 6%) 0px 2px 12px;
+  padding: 32px;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out 0s;
+}
+.mp-card-icon{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+    font-size: 0px;
+}
+.mp-card-icon-small{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+    font-size: 0px;
+}
+.question-check{
+    background-color: rgb(230, 243, 247);
+    color: rgb(3, 108, 140);
+    border-radius: 8px;
+    padding: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .sidebar-main {
+    display: none !important;
+  }
+  #appintegration .discover-main {
+    width: 100%;
+  }
+}
